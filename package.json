@@ -19,7 +19,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "postinstall": "patch-package"
   },
   "eslintConfig": {
     "extends": [
@@ -61,7 +62,11 @@
     "@storybook/react": "^6.5.0-alpha.48",
     "@storybook/testing-library": "^0.0.9",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "patch-package": "^6.4.7",
     "prop-types": "^15.8.1",
     "webpack": "^5.70.0"
+  },
+  "resolutions": {
+    "webpack": "5.70.0"
   }
 }
